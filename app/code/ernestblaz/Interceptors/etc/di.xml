@@ -3,4 +3,7 @@
     <type name="Magento\Catalog\Model\Product">
         <plugin name="change_name" type="ernestblaz\Interceptors\Plugin\Product" sortOrder="1" />
     </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="limit_quantity" type="ernestblaz\Interceptors\Plugin\Cart" sortOrder="1" />
+    </type>
 </config>
