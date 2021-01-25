@@ -1,6 +1,6 @@
 <?php
 
-namespace ernestblaz\Product\Model\Rewrite\Catalog;
+namespace ernestblaz\ProductPrice\Model\Rewrite\Catalog;
 
 
 class Product extends \Magento\Catalog\Model\Product
