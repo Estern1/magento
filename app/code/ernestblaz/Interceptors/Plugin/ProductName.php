@@ -3,7 +3,7 @@
 namespace ernestblaz\Interceptors\Plugin;
 
 
-class Product
+class ProductName
 {
     public function afterGetName(\Magento\Catalog\Model\Product $subject, $result)
     {
