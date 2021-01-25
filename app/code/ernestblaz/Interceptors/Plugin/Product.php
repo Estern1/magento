@@ -1,6 +1,6 @@
 <?php
 
-namespace ernestblaz\ProductName\Plugin;
+namespace ernestblaz\Interceptors\Plugin;
 
 
 class Product
