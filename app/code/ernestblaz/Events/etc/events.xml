@@ -6,4 +6,7 @@
     <event name="register_event">
         <observer name="redirect_after_register_observer" instance="ernestblaz\Events\Observer\RedirectAfterRegister" />
     </event>
+    <event name="reset_password_event">
+        <observer name="send_reset_password_email_observer" instance="ernestblaz\Events\Observer\ResetPassword" />
+    </event>
 </config>
