@@ -3,4 +3,7 @@
     <event name="login_event">
         <observer name="login_activity_logs_observer" instance="ernestblaz\Events\Observer\LoginActivityLogs" />
     </event>
+    <event name="register_event">
+        <observer name="redirect_after_register_observer" instance="ernestblaz\Events\Observer\RedirectAfterRegister" />
+    </event>
 </config>
