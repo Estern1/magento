@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Customer\Controller\Account\LoginPost" type="ernestblaz\Events\Controller\Rewrite\LoginPost" />
-    <preference for="Magento\Customer\Controller\Account\CreatePost" type="ernestblaz\Events\Controller\Rewrite\CreatePost" />
-    <type name="Magento\Customer\Controller\Account\CreatePost">
-        <plugin name="login_redirect" type="ernestblaz\Events\Plugin\LoginRedirect" sortOrder="1" />
-    </type>
-</config>

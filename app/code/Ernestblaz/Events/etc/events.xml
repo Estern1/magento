@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="login_event">
+        <observer name="login_activity_logs_observer" instance="Ernestblaz\Events\Observer\LoginActivityLogs" />
+    </event>
+    <event name="register_event">
+        <observer name="redirect_after_register_observer" instance="Ernestblaz\Events\Observer\RedirectAfterRegister" />
+    </event>
+    <event name="reset_password_event">
+        <observer name="send_reset_password_email_observer" instance="Ernestblaz\Events\Observer\ResetPassword" />
+    </event>
+</config>
