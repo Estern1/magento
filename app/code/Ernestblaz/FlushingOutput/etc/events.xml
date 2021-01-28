@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="flushing_output">
+        <observer name="flushing_output_logs_observer" instance="Ernestblaz\FlushingOutput\Observer\FlushingOutputLogs" />
+    </event>
+</config>
