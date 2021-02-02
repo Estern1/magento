@@ -5,7 +5,11 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Ernestblaz\Blocks\Block\Onepage" name="blocks_layout_onepage" template="Ernestblaz_Blocks::onepage.phtml" />
+            <block class="Ernestblaz\Blocks\Block\Onepage" name="blocks_layout_onepage" template="Ernestblaz_Blocks::onepage.phtml">
+                <arguments>
+                    <argument name="background_color" xsi:type="string">lightskyblue</argument>
+                </arguments>
+            </block>
         </referenceContainer>
     </body>
 </page>
