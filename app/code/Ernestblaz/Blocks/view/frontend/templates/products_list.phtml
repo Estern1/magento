@@ -1,0 +1,8 @@
+<?php
+foreach ($this->getProductCollection() as $product) {
+?>
+    <p><img src="/pub/media/catalog/product/<?php echo $product->getData('image'); ?>"  alt="product image"/></p>
+<?php
+}
+?>
+
