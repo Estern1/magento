@@ -1,0 +1,5 @@
+<?php
+foreach ($this->getStoreCollection() as $store) {
+    echo 'Store: ' . $store->getName() . ', Root category: ' . $this->getCategoryById($store->getRootCategoryId())->getName() . '</br>';
+}
+
