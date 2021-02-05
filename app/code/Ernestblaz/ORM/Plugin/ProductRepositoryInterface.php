@@ -19,8 +19,8 @@ class ProductRepositoryInterface
         $this->eventManager = $eventManager;
     }
 
-    public function afterSave(\Magento\Catalog\Api\ProductRepositoryInterface $subject, $result)
+    public function afterSave()
     {
-        $this->eventManager->dispatch('catalog_product_save_after', [$result]);
+        $this->eventManager->dispatch('catalog_product_save_after');
     }
 }
