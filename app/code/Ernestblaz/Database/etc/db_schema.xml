@@ -1,0 +1,10 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="vendor_entity">
+        <column xsi:type="int" name="vendor_id" padding="11" unsigned="true" nullable="false" identity="true" comment="Entity Id" />
+        <column xsi:type="varchar" name="vendor_name" length="255" nullable="false" default="" comment="Vendor name" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="vendor_id"/>
+        </constraint>
+    </table>
+</schema>

@@ -1,0 +1,11 @@
+{
+    "vendor_entity": {
+        "column": {
+            "vendor_id": true,
+            "vendor_name": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
