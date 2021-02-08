@@ -2,7 +2,9 @@
     "vendor_entity": {
         "column": {
             "vendor_id": true,
-            "vendor_name": true
+            "vendor_name": true,
+            "vendor_code": true,
+            "upgrade_date": true
         },
         "constraint": {
             "PRIMARY": true
