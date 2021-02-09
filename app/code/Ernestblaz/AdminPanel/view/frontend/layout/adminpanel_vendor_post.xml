@@ -5,7 +5,7 @@
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Ernestblaz\Blocks\Block\TemplateBlock" name="adminpanel_vendor_post" />
+            <block class="Ernestblaz\AdminPanel\Block\Post" name="adminpanel_vendor_post" />
         </referenceContainer>
     </body>
 </page>
