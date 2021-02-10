@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <head>
-        <title>Vendor Manage</title>
+        <title>Vendor Post</title>
     </head>
     <body>
         <referenceContainer name="content">
-            <block class="Ernestblaz\AdminPanel\Block\Manage" name="adminpanel_vendor_manage" />
+            <block class="Ernestblaz\AdminPanel\Block\Adminhtml\Post" name="adminpanel_vendor_post" />
         </referenceContainer>
     </body>
 </page>

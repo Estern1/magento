@@ -1,16 +1,15 @@
 <?php
 
+namespace Ernestblaz\AdminPanel\Controller\Adminhtml\Vendor;
 
-namespace Ernestblaz\AdminPanel\Controller\Vendor;
-
-
-class Post extends \Magento\Framework\App\Action\Action
+class Manage extends \Magento\Framework\App\Action\Action
 {
     protected $_pageFactory;
 
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $pageFactory)
+        \Magento\Framework\View\Result\PageFactory $pageFactory
+    )
     {
         $this->_pageFactory = $pageFactory;
         return parent::__construct($context);

@@ -1,16 +1,28 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
+        <add id="Ernestblaz_AdminPanel::vendor"
+             title="Vendor"
+             module="Ernestblaz_AdminPanel"
+             sortOrder="51"
+             resource="Ernestblaz_AdminPanel::vendor"/>
+
         <add id="Ernestblaz_AdminPanel::manage"
-             title="Manage Vendors" module="Ernestblaz_AdminPanel"
+             title="Manage Vendors"
+             module="Ernestblaz_AdminPanel"
              sortOrder="10"
-             resource="Magento_Backend::content"
+             parent="Ernestblaz_AdminPanel::vendor"
+             action="adminpanel/vendor/manage"
+             resource="Ernestblaz_AdminPanel::manage"
         />
 
         <add id="Ernestblaz_AdminPanel::post"
-             title="Post Vendor" module="Ernestblaz_AdminPanel"
+             title="Post Vendor"
+             module="Ernestblaz_AdminPanel"
              sortOrder="10"
-             resource="Magento_Backend::content"
+             parent="Ernestblaz_AdminPanel::vendor"
+             action="adminpanel/vendor/post"
+             resource="Ernestblaz_AdminPanel::post"
         />
     </menu>
 </config>
