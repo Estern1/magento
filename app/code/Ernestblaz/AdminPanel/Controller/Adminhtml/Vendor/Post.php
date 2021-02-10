@@ -2,12 +2,12 @@
 
 namespace Ernestblaz\AdminPanel\Controller\Adminhtml\Vendor;
 
-class Post extends \Magento\Framework\App\Action\Action
+class Post extends \Magento\Backend\App\Action implements \Magento\Framework\App\Action\HttpGetActionInterface
 {
     protected $_pageFactory;
 
     public function __construct(
-        \Magento\Framework\App\Action\Context $context,
+        \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\View\Result\PageFactory $pageFactory
     )
     {

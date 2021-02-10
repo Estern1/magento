@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Ernestblaz\AdminPanel\Block;
+namespace Ernestblaz\AdminPanel\Block\Adminhtml;
 
 
-class Post extends \Magento\Framework\View\Element\Template
+class Post extends \Magento\Backend\Block\Template
 {
 
 }

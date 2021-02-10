@@ -2,12 +2,12 @@
 
 namespace Ernestblaz\AdminPanel\Controller\Adminhtml\Vendor;
 
-class Manage extends \Magento\Framework\App\Action\Action
+class Manage extends \Magento\Backend\App\Action
 {
     protected $_pageFactory;
 
     public function __construct(
-        \Magento\Framework\App\Action\Context $context,
+        \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\View\Result\PageFactory $pageFactory
     )
     {
