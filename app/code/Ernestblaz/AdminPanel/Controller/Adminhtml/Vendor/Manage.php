@@ -2,7 +2,7 @@
 
 namespace Ernestblaz\AdminPanel\Controller\Adminhtml\Vendor;
 
-class Manage extends \Magento\Backend\App\Action
+class Manage extends \Magento\Backend\App\Action implements \Magento\Framework\App\Action\HttpGetActionInterface
 {
     protected $_pageFactory;
 

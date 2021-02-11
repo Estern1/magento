@@ -2,21 +2,18 @@
 
 namespace Ernestblaz\AdminPanel\Controller\Adminhtml\Vendor;
 
-class Post extends \Magento\Backend\App\Action implements \Magento\Framework\App\Action\HttpGetActionInterface
+use Magento\Framework\Controller\ResultFactory;
+
+class Post extends \Magento\Backend\App\Action
 {
-    protected $_pageFactory;
-
-    public function __construct(
-        \Magento\Backend\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $pageFactory
-    )
-    {
-        $this->_pageFactory = $pageFactory;
-        return parent::__construct($context);
-    }
-
     public function execute()
     {
-        return $this->_pageFactory->create();
+        $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        return $resultPage;
+    }
+
+    protected function _isAllowed()
+    {
+        return true;
     }
 }
