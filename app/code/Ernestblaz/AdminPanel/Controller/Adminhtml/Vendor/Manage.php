@@ -2,21 +2,23 @@
 
 namespace Ernestblaz\AdminPanel\Controller\Adminhtml\Vendor;
 
-class Manage extends \Magento\Backend\App\Action implements \Magento\Framework\App\Action\HttpGetActionInterface
+class Manage extends \Magento\Backend\App\Action
 {
-    protected $_pageFactory;
+    protected $resultPageFactory;
 
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $pageFactory
+        \Magento\Framework\View\Result\PageFactory $resultPageFactory
     )
     {
-        $this->_pageFactory = $pageFactory;
-        return parent::__construct($context);
+        parent::__construct($context);
+        $this->resultPageFactory = $resultPageFactory;
     }
 
     public function execute()
     {
-        return $this->_pageFactory->create();
+        $resultPage = $this->resultPageFactory->create();
+
+        return $resultPage;
     }
 }
