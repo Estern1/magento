@@ -2,6 +2,7 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
     <table name="vendor_entity">
         <column xsi:type="int" name="vendor_id" padding="11" unsigned="true" nullable="false" identity="true" comment="Entity Id" />
+        <column xsi:type="int" name="vendor_type" padding="2" unsigned="true"  nullable="false" comment="Vendor type" />
         <column xsi:type="varchar" name="vendor_name" length="255" nullable="false" default="" comment="Vendor name" />
         <column xsi:type="varchar" name="vendor_code" length="255" nullable="false" default="" comment="Vendor code" />
         <column xsi:type="timestamp" name="upgrade_date" nullable="false" default="CURRENT_TIMESTAMP" on_update="true" comment="Upgrade date" />

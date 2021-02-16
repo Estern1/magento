@@ -9,7 +9,9 @@ class Save extends \Magento\Backend\App\Action
         $params = $this->getRequest()->getParams();
 
         $vendor = $this->_objectManager->create(\Ernestblaz\Database\Model\Vendor::class);
-        $vendor->setVendorName($params['vendor_name'])->setVendorCode($params['vendor_code']);
+        $vendor->setVendorName($params['vendor_name'])
+            ->setVendorCode($params['vendor_code'])
+            ->setVendorType($params['vendor_type']);
         $vendor->save();
 
         $resultRedirect = $this->resultRedirectFactory->create();

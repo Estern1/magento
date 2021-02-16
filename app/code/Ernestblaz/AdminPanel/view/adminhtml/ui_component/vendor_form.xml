@@ -40,6 +40,17 @@
                 <item name="label" xsi:type="string" translate="true">Vendor Details</item>
             </item>
         </argument>
+        <field name="vendor_type">
+            <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">Ernestblaz\AdminPanel\Model\Config\Source\VendorTypeOptions</item>
+                <item name="config" xsi:type="array">
+                    <item name="dataType" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Vendor Type</item>
+                    <item name="formElement" xsi:type="string">select</item>
+                    <item name="source" xsi:type="string">vendor_entity</item>
+                </item>
+            </argument>
+        </field>
         <field name="vendor_name">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
