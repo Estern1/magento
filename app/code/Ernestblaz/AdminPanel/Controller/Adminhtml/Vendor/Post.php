@@ -20,6 +20,7 @@ class Post extends \Magento\Backend\App\Action
     {
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
 
+        $resultPage->setActiveMenu('Ernestblaz_AdminPanel::post');
         if (!$this->helperData->getGeneralConfig('isenabled')) {
             $resultPage->getConfig()->getTitle()->prepend('Vendor Post Form is not available');
         }

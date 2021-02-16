@@ -8,5 +8,8 @@
         <constraint xsi:type="primary" referenceId="PRIMARY">
             <column name="vendor_id"/>
         </constraint>
+        <index referenceId="vendor_name_index" indexType="fulltext">
+            <column name="vendor_name"/>
+        </index>
     </table>
 </schema>
