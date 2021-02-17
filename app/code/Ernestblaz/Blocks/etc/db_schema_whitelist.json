@@ -1,0 +1,15 @@
+{
+    "contact": {
+        "column": {
+            "id": true,
+            "name": true,
+            "email": true,
+            "telephone": true,
+            "comment": true,
+            "country": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

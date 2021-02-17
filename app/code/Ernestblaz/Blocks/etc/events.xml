@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="after_contact_event">
+        <observer name="save_new_contact_to_database_obeserver" instance="Ernestblaz\Blocks\Observer\SaveNewContact" />
+    </event>
+</config>
