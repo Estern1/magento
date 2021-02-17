@@ -9,10 +9,10 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "version": "2.4.1",
+    "version": "2.4.2",
     "require": {
-        "magento/product-enterprise-edition": "2.4.1",
-        "magento/composer-root-update-plugin": "~1.0"
+        "magento/composer-root-update-plugin": "~1.1",
+        "magento/product-enterprise-edition": "2.4.2"
     },
     "autoload": {
         "exclude-from-classmap": [
@@ -38,7 +38,7 @@
     },
     "require-dev": {
         "allure-framework/allure-phpunit": "~1.2.0",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "friendsofphp/php-cs-fixer": "~2.16.0",
         "lusitanian/oauth": "~0.8.10",
         "magento/magento-coding-standard": "*",
@@ -76,4 +76,3 @@
         "magento-force": "override"
     }
 }
-
