@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route method="GET" url="/V1/ernestblaz/vendor/get">
+        <service class="Ernestblaz\API\Api\VendorManagementInterface" method="getVendor"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="GET" url="/V1/ernestblaz/vendor/get/list">
+        <service class="Ernestblaz\API\Api\VendorManagementInterface" method="getVendorsList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="POST" url="/V1/ernestblaz/vendor/add">
+        <service class="Ernestblaz\API\Api\VendorManagementInterface" method="addVendor"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="POST" url="/V1/ernestblaz/vendor/edit">
+        <service class="Ernestblaz\API\Api\VendorManagementInterface" method="modifyVendor"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route method="POST" url="/V1/ernestblaz/vendor/delete">
+        <service class="Ernestblaz\API\Api\VendorManagementInterface" method="removeVendor"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>
