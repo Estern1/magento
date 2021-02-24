@@ -3,31 +3,31 @@
     <route method="GET" url="/V1/ernestblaz/vendor/get">
         <service class="Ernestblaz\API\Api\VendorManagementInterface" method="getVendor"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Magento_Customer::group"/>
         </resources>
     </route>
     <route method="GET" url="/V1/ernestblaz/vendor/get/list">
         <service class="Ernestblaz\API\Api\VendorManagementInterface" method="getVendorsList"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Magento_Customer::group"/>
         </resources>
     </route>
     <route method="POST" url="/V1/ernestblaz/vendor/add">
         <service class="Ernestblaz\API\Api\VendorManagementInterface" method="addVendor"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Magento_Customer::group"/>
         </resources>
     </route>
     <route method="POST" url="/V1/ernestblaz/vendor/edit">
         <service class="Ernestblaz\API\Api\VendorManagementInterface" method="modifyVendor"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Magento_Customer::group"/>
         </resources>
     </route>
     <route method="POST" url="/V1/ernestblaz/vendor/delete">
         <service class="Ernestblaz\API\Api\VendorManagementInterface" method="removeVendor"/>
         <resources>
-            <resource ref="anonymous"/>
+            <resource ref="Magento_Customer::group"/>
         </resources>
     </route>
 </routes>

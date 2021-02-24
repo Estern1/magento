@@ -1,0 +1,11 @@
+type Query {
+    vendor: Vendor @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\Vendor")
+}
+
+type Vendor {
+    vendor_id: Int
+    vendor_name: String
+    vendor_code: String
+    upgrade_date: String
+    vendor_type: Int
+}
