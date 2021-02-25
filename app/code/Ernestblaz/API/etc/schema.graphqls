@@ -18,9 +18,25 @@ type VendorItem {
 
 type Mutation {
     removeVendor(vendor_id: ID!): RemoveVendor @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\RemoveVendor")
+    addVendor(input: VendorItemInput!): AddVendor @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\AddVendor")
+    updateVendor(vendor_id: ID!, input: VendorItemInput!): UpdateVendor @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\UpdateVendor")
 }
 
 type RemoveVendor {
     success: Boolean
+}
+
+input VendorItemInput {
+    vendor_name: String
+    vendor_code: String
+    vendor_type: Int
+}
+
+type AddVendor {
+    vendor: VendorItem
+}
+
+type UpdateVendor {
+    vendor: VendorItem
 }
 
