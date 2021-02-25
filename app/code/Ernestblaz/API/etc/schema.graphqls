@@ -1,8 +1,14 @@
 type Query {
-    vendor: Vendor @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\Vendor")
+    vendors: Vendors @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\Vendors")
 }
 
-type Vendor {
+type Vendors {
+    items_count: Int
+    items: [VendorItem] @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\VendorItem")
+}
+
+
+type VendorItem {
     vendor_id: Int
     vendor_name: String
     vendor_code: String
