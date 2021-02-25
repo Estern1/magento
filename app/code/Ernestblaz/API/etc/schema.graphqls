@@ -15,3 +15,12 @@ type VendorItem {
     upgrade_date: String
     vendor_type: Int
 }
+
+type Mutation {
+    removeVendor(vendor_id: ID!): RemoveVendor @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\RemoveVendor")
+}
+
+type RemoveVendor {
+    success: Boolean
+}
+
