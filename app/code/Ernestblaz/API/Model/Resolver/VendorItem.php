@@ -16,8 +16,7 @@ class VendorItem implements ResolverInterface
     private $vendorFactory;
 
     public function __construct(
-        CollectionFactory $vendorFactory,
-        StoreManagerInterface $storeManager
+        CollectionFactory $vendorFactory
     ) {
         $this->vendorFactory = $vendorFactory;
     }
