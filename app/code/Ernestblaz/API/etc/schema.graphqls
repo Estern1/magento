@@ -1,12 +1,15 @@
 type Query {
-    vendors: Vendors @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\Vendors")
+    vendors(
+        search: String,
+        filter: VendorFilterInput
+    ): Vendors @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\Vendors")
+    vendor(vendor_id: ID): VendorItem @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\Vendor")
 }
 
 type Vendors {
     items_count: Int
-    items: [VendorItem] @resolver(class: "Ernestblaz\\API\\Model\\Resolver\\VendorItem")
+    items: [VendorItem]
 }
-
 
 type VendorItem {
     vendor_id: Int
@@ -30,6 +33,11 @@ input VendorItemInput {
     vendor_name: String
     vendor_code: String
     vendor_type: Int
+}
+
+input VendorFilterInput {
+    vendor_type: FilterEqualTypeInput
+    vendor_name: FilterMatchTypeInput
 }
 
 type AddVendor {
