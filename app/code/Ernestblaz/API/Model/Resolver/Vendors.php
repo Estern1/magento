@@ -77,6 +77,18 @@ class Vendors implements ResolverInterface
                     if ($vendor->{'get' . $propertyName}() != $value) {
                         return false;
                     }
+                } elseif ($key == 'match') {
+                    if ($vendor->{'get' . $propertyName}() != $value) {
+                        return false;
+                    }
+                } elseif ($key == 'from') {
+                    if ($vendor->{'get' . $propertyName}() < $value) {
+                        return false;
+                    }
+                } elseif ($key == 'to') {
+                    if ($vendor->{'get' . $propertyName}() > $value) {
+                        return false;
+                    }
                 }
             }
         }

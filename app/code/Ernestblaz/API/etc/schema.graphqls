@@ -36,8 +36,9 @@ input VendorItemInput {
 }
 
 input VendorFilterInput {
-    vendor_type: FilterEqualTypeInput
-    vendor_name: FilterMatchTypeInput
+    vendor_id: FilterEqualTypeInput
+    vendor_type: FilterRangeTypeInput
+    vendor_code: FilterMatchTypeInput
 }
 
 type AddVendor {
